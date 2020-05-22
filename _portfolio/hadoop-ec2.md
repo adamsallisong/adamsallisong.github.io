@@ -83,15 +83,16 @@ To verify that the correct version of java was installed we can check by running
 
 Now that Java is correctly installed, we can install Hadoop. This again ran into issues with the tutorial being outdated because the link to the mirror for Hadoop download was outdated. I found the updated mirror [here](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.0.3/hadoop-3.0.3.tar.gz). Again, these commands needs to be ran on all nodes. 
 
-```allnodes$ wget wget http://apache.claz.org/hadoop/common/hadoop-3.0.3/hadoop-3.0.3.tar.gz  -P ~/Downloads
+```
+allnodes$ wget wget http://apache.claz.org/hadoop/common/hadoop-3.0.3/hadoop-3.0.3.tar.gz  -P ~/Downloads
 allnodes$ sudo tar zxvf ~/Downloads/hadoop-* -C /usr/local
 allnodes$ sudo mv /usr/local/hadoop-* /usr/local/hadoop
 ```
 Set Up Environment Variables
 With Hadoop successfully installed on each instance, we want to create environment variables for the reference to path files throughout the data query and configurations. These three environment variables will be: 
-* $JAVA_HOME => where Java is installed on machine
-*	$HADOOP_HOME => where Hadoop is installed
-*	$HADOOP_CONF_DIR => directory within Hadoop that has configuration files
+* JAVA_HOME => where Java is installed on machine
+*	HADOOP_HOME => where Hadoop is installed
+*	HADOOP_CONF_DIR => directory within Hadoop that has configuration files
 
 This can be ran on all nodes: 
 ![env var](/images/hadoopec2/Picture8.png)
