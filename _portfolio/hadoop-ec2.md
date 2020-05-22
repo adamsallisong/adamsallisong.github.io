@@ -22,11 +22,10 @@ Using the allison-key.pem we are able to SSH into the instances. To SSH into the
 ![SSH Instance](/images/hadoopec2/Picture2.png)
 
 Since we will eventually want to SSH into all nodes we will need the DNS for each: 
-
-`namenode => <dns>.us-east-2.compute.amazonaws.com
-datanode1 => <dns>.us-east-2.compute.amazonaws.com
-datanode2 => <dns>.us-east-2.compute.amazonaws.com
-datanode3 => <dns>.us-east-2.compute.amazonaws.com`
+`namenode => <name node dns>`
+`datanode1 => <data node1 dns>`
+`datanode2 => <data node2 dns>`
+`datanode3 => <data node3 dns>`
 
 
 
