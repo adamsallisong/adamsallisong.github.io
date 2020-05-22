@@ -281,5 +281,7 @@ While the program runs, we can see that it is mapping and reducing the informati
 
 ### Job Validation in UI 
 The job success was returned in the console, but can also be viewed in the UI: 
+
 `<namenode public dns>:8088/proxy/application_<job_id>/`
+
 ![clusters](/images/hadoopec2/jobsucceed.png)
