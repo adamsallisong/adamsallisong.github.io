@@ -43,6 +43,7 @@ returned to one output directory on the hdfs, accessible by the master node.
 ### S3 Sample Data & Buckets 
 S3 is Amazon’s cloud object storage capability and allows users to store objects, data and meta data. The first step is to insatiate an S3 account and create a bucket. A bucket is a unit of storage in AWS and will serve as the location of the hdfs for this example. 
 ![Bucket](/images/hadoopemr/Picture3.png)
+
 Within this bucket – create two folders for “logs” and “output”. The output folder is where the results from the MapReduce function will be stored on the hdfs. 
 ![File Structure](/images/hadoopemr/Picture43.png)
 
@@ -61,7 +62,6 @@ Hardware configuration within the cluster will determine the number of nodes to 
 Instead of creating two instances individually within AWS, this will automatically generate 1 namenode (master) and 2 core (slave) nodes. 
 ![Hardware Config](/images/hadoopemr/Picture8.png)
 
-
 The final step is to configure security and access, which we can do with the previously generated key pair of “allison-key.pem”.
 ![Security Config](/images/hadoopemr/Picture9.png)
 
@@ -74,12 +74,10 @@ To see these core instances that have been created, the EC2 Dashboard shows the 
 ### Data Setup
 AWS provides access to several [sample datasets](s3://us-west-2.elasticmapreduce.samples) and for this example we are using the data provided in [Amazon CloudFront Logs](s3://us-west2.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q). The expected output from this example script will be two pieces: Total Requests per Operating System.
 
-
 ### Hive Script Configuration
 To add the Hive script accessing the data referenced above a Step needs to be added to the EMR cluster. A step is a “distinct unit of work, comprising one or more Hadoop jobs that run only on the master node of an Amazon EMR cluster” [source](https://aws.amazon.com/premiumsupport/knowledge-center/bootstrap-step-emr/). The step added will run a prewritten Hive script to query the CloudFront logs. The output for this Hive step is stored in the output folder that was created in the S3 Bucket. This step will automatically run once the node cluster has started. 
 
 ![Hive Steps](/images/hadoopemr/Picture12.png)
-
 
 ### Congratulations, you have Hadoop'd!
 To validate that the step ran the “Application history” tab will provide history of the services ran on the node cluster. The hive job shows as “Succeeded”.
@@ -93,4 +91,3 @@ The output of the Hive script is stored in the output folder of the S3 bucket.
 
 After downloading the file, you can see the successful query of the Total requests per Operating System.
 ![Events Log](/images/hadoopemr/Picture15.png)
-
