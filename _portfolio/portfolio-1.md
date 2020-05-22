@@ -12,6 +12,7 @@ two fundamental components:
 computer nodes (datanodes, slave nodes) to help process large amounts of data. The hdfs can
 be accessed by several different clients as if they were one local client. 
 ![HDFSTESTING](https://github.com/adamsallisong/adamsallisong.github.io/blob/master/_portfolio/images/Picture1.png)
+![GitHub Logo](/images/500x300.png)
 
 
 
