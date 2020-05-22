@@ -1,6 +1,6 @@
 ---
 title: "Hadoop & MapReduce with AWS Elastic Map Reduce (EMR)"
-excerpt: "Configuration of Hadoop Cluster using EMR<br/><img src='/images/500x300.png'>"
+excerpt: "Configuration of Hadoop Cluster using EMR<br/><img src='/images/hadoopemr/emr.png'>"
 collection: portfolio
 ---
 ## What is Hadoop?
