@@ -11,12 +11,14 @@ two fundamental components:
 * Distributed File System: This is the file structure of Hadoop that is set across several
 computer nodes (datanodes, slave nodes) to help process large amounts of data. The hdfs can
 be accessed by several different clients as if they were one local client. 
+![HDFS](images/hadoopemr/Picture1.png)
 * MapReduce: This algorithm allows for queries to be processed in parallel as opposed to the
 traditional serial fashion through distributed applications. The map function will take a
 function and apply it to each subsequent value in the dataset. The reduce function then takes
 the separate data nodes (master/slave relationship) that will process an individual query and 
 process results in tandem. These key value pairs are then aggregated together and returned to
 the name node
+![HDFS](images/hadoopemr/Picture2.png)
 
 ## What is Hive?
 Apache Hive is a querying language (HQL) that works on top of the Hadoop platform to perform
