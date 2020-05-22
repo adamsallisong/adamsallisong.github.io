@@ -248,3 +248,38 @@ The MapReduce History Server can be seen at: <name node public dns>:19888/jobhis
 ### Running MapReduce on Hadoop
 The next step is to run a MapReduce function on the newly created Hadoop clusters. Just like with the EMR example, the goal is to run a data query and have the slavenodes chunk up the work and aggregate the answer back to the master namenode. One of the most common MapReduce example tutorials is for calculating the value of Pi – and is stored in the MapReduce example files at $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.0.3.jar. 
 
+Before being able to run the MapReduce, the mapred-site.xml needed to be updated with the HADOOP_HOME environment variable to set configuration and file structure for both the map and the reduce processes. Additionally, the memory properties are required or else MapReduce will throw a “Exit Code 143” and terminate the instances due to lack of memory. 
+```
+<property>
+  <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+ </property>
+<property>
+  <name>mapreduce.map.env</name>
+  <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+</property>
+<property>
+  <name>mapreduce.reduce.env</name>
+  <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+</property>
+<property>
+  <name>mapreduce.map.memory.mb</name>
+  <value>2000</value>
+</property>
+<property>
+  <name>mapreduce.reduce.memory.mb</name>
+  <value>2000</value>
+ </property>
+ ```
+### Solving For Pi
+Now that the configurations and memory on the new instances are set to go, it is time to Hadoop! The example program estimates the value of Pi using a quasi-Monte Carlo method. Since our instance is rather small, we used 10 maps with 10 sample values each [tutorial source](https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-run-samples-linux#pi-%CF%80-example).
+
+`namenode$ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.0.3.jar pi 10 10`
+
+![clusters](/images/hadoopec2/solvepi.png)
+
+While the program runs, we can see that it is mapping and reducing the information across the nodes. At the end of process the value of Pi is returned. Our reduced version of only 10 samples provided a pie estimation of 3.2.
+
+### Job Validation in UI 
+The job success was returned in the console, but can also be viewed in the UI: 
+`<namenode public dns>:8088/proxy/application_<job_id>/`
+![clusters](/images/hadoopec2/jobsucceeded.png)
