@@ -125,10 +125,36 @@ The next file to update is the $HADOOP_CONF_DIR/core-site.xml and update the con
 ```
 
 The next file to update is $HADOOP_CONF_DIR/yarn-site.xml. Again, we need to update the PublicDNS for the namenode in this configuration file across all instances. 
-![env var](/images/hadoopec2/Picture12.png)
+
+```
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+</property>
+<property>
+  <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+  <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+<property>
+  <name>yarn.resourcemanager.hostname</name>
+  <value><public dns of namenode></value>
+</property>
+```
 
 Finally, we need to update the $HADOOP_CONF_DIR/mapred-site.xml to also look at the name node public DNS.
-![env var](/images/hadoopec2/Picture13.png)
+
+```
+<configuration>
+  <property>
+    <name>mapreduce.jobtracker.addresss</name>
+    <value><public dns name node>:54311</value>
+  </property>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+</configuration>
+```
 
 ### Update Host Specific Configurations
 For all nodes, we need to set up the host names for each instance. The host name is also the first part of the private DNS. For our configuration it is as follows: 	
@@ -158,4 +184,67 @@ To the same degree, we need to create a slaves file that will reference the host
 To ensure that all proper access is granted to the current user, make sure that the owner of HADOOP_HOME is set to the user. 
 sudo chown -R ubuntu HADOOP_HOME
 
+### DataNode Specific Configurations
+Just like with the Master namenode, there are several configurations that are specific to just the datanode (slave) instances. Instead of setting files to “namenode” we will now update them to be “datanode” for each instance. This is done within $HADOOP_CONF_DIR/hdfs-site.xml
+```
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file://userl/local/hadoop/hadoop_data/hdfs/datanode</value>
+  </property>
+</configuration>
+```
+
+The file referenced above does not yet exit (…hdfs/datanode) so we will need to create it on each datanode instance. 
+
+`datanodes$ sudo mkdir -p $HADOOP_HOME/hadoop_data/hdfs/datanode`
+
+### Starting Hadoop
+Now that configurations are squared away it is time to work the magic and start Hadoop! Before running Hadoop for the first time it is necessary to format the configurations. This will set a file called CURRENT on the namenode and set the ClientID for the datanodes to connect with the namenode. 
+
+`namenode$ hdfs namenode -format`
+
+Now that the namenode is ready to go, run the start command from $HADOOP_HOME
+
+`namenode$ $HADOOP_HOME/sbin/start-dfs.sh`
+
+This command is intended to start the namenode as well as all three datanodes. At first this command would only start the namenode.  The health of the node cluster can be seen at the Public DNS and port 9870. Finding this correct port was frustrating, because the tutorial had an outdated version of Hadoop, and the port had been updated since the writing. After several hours of searching on the wrong error the port issue was diagnosed and be able to see the node live through the UI. 
+
+`http://<public dns name node>:9870/dfshealth.html#tab-overview`
+
+![one node](/images/hadoopec2/onenode.png)
+
+This UI allowed for easier debugging through the log file – Under the utilities tab. This helped to diagnose the two errors explained in detail in the next section, Common Problems and Solutions. Another way to tell the health of a node cluster is through the command hdfs dfsadmin –report which will produce the same UI in the command line.
+
+To solve this problem, we can start each data node individually. This can be done by running the command hdfs datanode on each node.
+
+`hdfs datanode`
+
+Additionally, refreshing the UI will show that there are now four datanodes that are up and running:
+
+![four node](/images/hadoopec2/fourlives.png)
+
+Now that the nodes are running, from the master namenode we can start YARN and the MapReduce history server. This history server will show the history of all jobs ran on the cluster. 
+
+![yarn](/images/hadoopec2/startyarn.png)
+
+To validate that all these processes have started, run the jps command on the namenode. JPS looks for java process and returns the status and process ID of current programs.
+
+
+![jps](/images/hadoopec2/jps.png)
+
+The Hadoop clusters can been seen at: <name node public dns>:8088/cluster/apps
+
+![clusters](/images/hadoopec2/clusters.png)
+
+The MapReduce History Server can be seen at: <name node public dns>:19888/jobhistory (YARN UI). It is empty because no MapReduce jobs have been ran on the cluster yet. 
+ 
+![clusters](/images/hadoopec2/emptyyarn.png)
+
+### Running MapReduce on Hadoop
+The next step is to run a MapReduce function on the newly created Hadoop clusters. Just like with the EMR example, the goal is to run a data query and have the slavenodes chunk up the work and aggregate the answer back to the master namenode. One of the most common MapReduce example tutorials is for calculating the value of Pi – and is stored in the MapReduce example files at $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.0.3.jar. 
 
