@@ -144,10 +144,11 @@ Since one of the instances (namenode) is considered the master and the others ar
 
 To only the namenode, create a directory where the data can reside, and a masters file within the $HADOOP_CONF_DIR
 
-``
+```
 namenode$ sudo mkdir -p $HADOOP_HOME/hadoop_data/hdfs/namenode
 namenode$ sudo touch $HADOOP_CONF_DIR/masters
 ```
+
 Within the masters file, we now need to add the same hostname that was added in the above /etc/hosts files. To the master file, add the namenode host name ip. 
 
 To the same degree, we need to create a slaves file that will reference the host name of the associated slave instances in the $HADOOP_CONF_DIR/slaves. 
