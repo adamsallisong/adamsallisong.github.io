@@ -23,7 +23,7 @@ Apache Hive is a querying language (HQL) that works on top of the Hadoop platfor
 data querying and analysis. Hive is a framework for MapReduce, automating the process. 
 
 ## Building a Hadoop Cluster with AWS & EMR 
-Built using the following [tutorial](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)
+_Built using the following [tutorial](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)_
 
 Amazon Elastic Map Reduce (EMR) on Amazon Web Services (AWS) allows for simplified
 node clustering and services for Hadoop. EMR is a scalable managed framework that automates the process of node provisioning, and both cluster and Hadoop configurations. It is all managed through the AWS dashboards, and requires little technical knowledge to get started. EMR consists of clusters:
