@@ -23,7 +23,7 @@ process results in tandem. These key value pairs are then aggregated together an
 the name node. 
 ![MapReduce](/images/hadoopemr/Picture2.png)
 
-[Picture Source](https://blog.sqlauthority.com/)
+[Picture Source](https://blog.sqlauthority.com/){:target="_blank"}
 
 ## What is Hive?
 Apache Hive is a querying language (HQL) that works on top of the Hadoop platform to perform
