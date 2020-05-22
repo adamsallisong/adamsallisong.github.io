@@ -11,7 +11,8 @@ two fundamental components:
 * Distributed File System: This is the file structure of Hadoop that is set across several
 computer nodes (datanodes, slave nodes) to help process large amounts of data. The hdfs can
 be accessed by several different clients as if they were one local client. 
-![HDFS](images/hadoopemr/Picture1.png)
+![HDFS](https://adamsallisong.github.io/adamsallisong.github.io/master/images/allison-adams.jpg)
+
 
 * MapReduce: This algorithm allows for queries to be processed in parallel as opposed to the
 traditional serial fashion through distributed applications. The map function will take a
@@ -88,6 +89,7 @@ Additionally, the “Events” tab acts as a log for each action taken on the No
 
 The output of the Hive script is stored in the output folder of the S3 bucket.
 ![Events Log](images/hadoopemr/Picture14.png)
+
 After downloading the file, you can see the successful query of the Total requests per Operating System.
 ![Events Log](images/hadoopemr/Picture15.png)
 
