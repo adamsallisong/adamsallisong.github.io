@@ -11,7 +11,8 @@ two fundamental components:
 * Distributed File System: This is the file structure of Hadoop that is set across several
 computer nodes (datanodes, slave nodes) to help process large amounts of data. The hdfs can
 be accessed by several different clients as if they were one local client. 
-![HDFS](https://adamsallisong.github.io/adamsallisong.github.io/master/images/allison-adams.jpg)
+![HDFS](../images/hadoopemr/Picture2.png)
+<img src="images/hadoopemr/Picture2.png", width=800>
 
 
 * MapReduce: This algorithm allows for queries to be processed in parallel as opposed to the
