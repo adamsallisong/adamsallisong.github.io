@@ -12,6 +12,7 @@ Following the steps within EC2, create 4 Ubuntu instances within the free tier o
 ![Instances](/images/hadoopec2/Picture1.png)
 
 On each of these nodes – change the Security groups to be “open” to allow for remote access from any IP address or port. It is important to have these security settings for both the INBOUND and the OUTBOUND traffic to these instances. If you don’t make these security groups open, then attempting to SSH into the instances will result in a timeout error. 
+
 ![Security](/images/hadoopec2/Picture2.png)
 
 ### Create Key Pair
@@ -142,7 +143,7 @@ These updates need to be added to the /etc/hosts file on each instance.
 ### NameNode Specific Configurations
 Since one of the instances (namenode) is considered the master and the others are slaves, the master namenode needs to have the namenode configurations within hdfs, and the datanodes need to have datanode configurations. 
 
-To only the namenode, create a directory where the data can reside, and a masters file within the $HADOOP_CONF_DIR
+To only the namenode, create a directory where the data can reside, and a masters file within the HADOOP_CONF_DIR
 
 ```
 namenode$ sudo mkdir -p $HADOOP_HOME/hadoop_data/hdfs/namenode
@@ -151,9 +152,9 @@ namenode$ sudo touch $HADOOP_CONF_DIR/masters
 
 Within the masters file, we now need to add the same hostname that was added in the above /etc/hosts files. To the master file, add the namenode host name ip. 
 
-To the same degree, we need to create a slaves file that will reference the host name of the associated slave instances in the $HADOOP_CONF_DIR/slaves. 
+To the same degree, we need to create a slaves file that will reference the host name of the associated slave instances in the HADOOP_CONF_DIR/slaves. 
 
-To ensure that all proper access is granted to the current user, make sure that the owner of $HADOOP_HOME is set to the user. 
-sudo chown -R ubuntu $HADOOP_HOME
+To ensure that all proper access is granted to the current user, make sure that the owner of HADOOP_HOME is set to the user. 
+sudo chown -R ubuntu HADOOP_HOME
 
 
