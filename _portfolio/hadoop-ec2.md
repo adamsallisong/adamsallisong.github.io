@@ -4,7 +4,7 @@ excerpt: "Configuration of Hadoop Cluster using EC2<br/><img src='/images/hadoop
 collection: portfolio
 ---
 ## Hadoop
-Hadoop is an open source platform that expedites the processing & analysis of large data (both structured and unstructured) in a distributed computing environment. For a more deatiled overview of Hadoop - see my portfolio piece [here.](https://adamsallisong.github.io/portfolio/hadoop-emr/). In this project we will spin up a Hadoop cluster using AWS Elastic Cloud Compute (EC2) which provides scalable cloud computing to developers.
+Hadoop is an open source platform that expedites the processing & analysis of large data (both structured and unstructured) in a distributed computing environment. For a more deatiled overview of Hadoop - see my portfolio piece [here.](https://adamsallisong.github.io/portfolio/hadoop-emr/) In this project we will spin up a Hadoop cluster using AWS Elastic Cloud Compute (EC2) which provides scalable cloud computing to developers.
 
 ### Create EC2 Instances
 Following the steps within EC2, create 4 Ubuntu instances within the free tier of the AWS services. (*Note: as discovered later in the process, the free tier instances may not provide enough memory to run intended MapReduce problems)*
@@ -22,7 +22,8 @@ Using the a-key.pem we are able to SSH into the instances. To SSH into the nodes
 ![SSH Instance](/images/hadoopec2/Picture3.png)
 
 Since we will eventually want to SSH into all nodes we will need the DNS for each: 
-```namenode => <name node dns>
+```
+namenode => <name node dns>
 datanode1 => <data node1 dns>
 datanode2 => <data node2 dns>
 datanode3 => <data node3 dns>
@@ -103,7 +104,7 @@ We can validate that these have updated by echoing the path for each of these en
 It is important to note that anytime you break the SSH connection to an instance these environment variables are not persisted on the instances. 
 
 ### Hadoop Specific Configurations
-Several of the Hadoop files need to be updated to reflect the Public DNS and host names for the AWS EC2 instances. It is important to note that when an EC2 instance is restarted the publicDNS will change and all file will have to updated. I made these updates for each file by using the vim text editor directly within the bash terminal. The first configuration file to update is $HADOOP_CONF_DIR/hadoop-env.sh to match our $JAVA_HOME environment variable. 
+Several of the Hadoop files need to be updated to reflect the Public DNS and host names for the AWS EC2 instances. It is important to note that when an EC2 instance is restarted the publicDNS will change and all file will have to updated. I made these updates for each file by using the vim text editor directly within the bash terminal. The first configuration file to update is HADOOP_CONF_DIR/hadoop-env.sh to match our JAVA_HOME environment variable. 
 
 Important Files to Understand
 * **core-site.xml**: The main configuration file for Hadoop. This file provides Hadoop with the default file system (fs.defaultFS) which is the publicDNS for the namenode (master). Adding this property allows for shortcut referencing of the dfs when running namenode commands.
@@ -130,7 +131,8 @@ Finally, we need to update the $HADOOP_CONF_DIR/mapred-site.xml to also look at 
 ### Update Host Specific Configurations
 For all nodes, we need to set up the host names for each instance. The host name is also the first part of the private DNS. For our configuration it is as follows: 	
 
-```namenode => <public dns> ip-172-31-25-234
+```
+namenode => <public dns> ip-172-31-25-234
 datanode1 => <public dns> ip-172-31-24-0
 datanode2 => <public dns> ip-172-31-31-150
 datanode3 =><public dns>  ip-172-31-27-203
@@ -142,7 +144,8 @@ Since one of the instances (namenode) is considered the master and the others ar
 
 To only the namenode, create a directory where the data can reside, and a masters file within the $HADOOP_CONF_DIR
 
-``namenode$ sudo mkdir -p $HADOOP_HOME/hadoop_data/hdfs/namenode
+``
+namenode$ sudo mkdir -p $HADOOP_HOME/hadoop_data/hdfs/namenode
 namenode$ sudo touch $HADOOP_CONF_DIR/masters
 ```
 Within the masters file, we now need to add the same hostname that was added in the above /etc/hosts files. To the master file, add the namenode host name ip. 
