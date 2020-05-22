@@ -25,7 +25,8 @@ Since we will eventually want to SSH into all nodes we will need the DNS for eac
 ```namenode => <name node dns>
 datanode1 => <data node1 dns>
 datanode2 => <data node2 dns>
-datanode3 => <data node3 dns>```
+datanode3 => <data node3 dns>
+```
 
 Before we SSH, we want to change the permissions of the Key to ensure that it is secure so we will modify the permissions (chmod) to ensure that the owner of the file can read and write. As recommended by the tutorial, we will run this command on the a-key.pem
 
@@ -38,7 +39,8 @@ Now we are able to SSH into the notes without trouble. This can be done by passi
 Since we will be SSH’ing into these instances quite a bit, it will be easier to set up a config file within ~/.ssh to provide an alias for each instance. This will allow for the command to change from the above address to: ssh namenode 
 To make this change update the config file to include the public DNS for each instance. The namenode will be the master and each subsequent datanode (1-3) will act as the slave nodes. 
 
-```Host namenode
+```
+Host namenode
   HostName ec2-18-188-21-63.us-east-2.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/allison-key.pem
@@ -52,7 +54,8 @@ Host datanode2
   IdentityFile ~/.ssh/allison-key.pem
 Host datanode3
   HostName ec2-18-220-88-132.us-east-2.compute.amazonaws.com
-  User ubuntu```
+  User ubuntu
+```
 
 
 
