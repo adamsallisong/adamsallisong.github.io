@@ -226,11 +226,11 @@ To solve this problem, we can start each data node individually. This can be don
 
 Additionally, refreshing the UI will show that there are now four datanodes that are up and running:
 
-![four node](/images/hadoopec2/fourlives.png)
+![four node](/images/hadoopec2/4lives.png)
 
 Now that the nodes are running, from the master namenode we can start YARN and the MapReduce history server. This history server will show the history of all jobs ran on the cluster. 
 
-![yarn](/images/hadoopec2/startyarn.png)
+![yarn](/images/hadoopec2/staryarn.png)
 
 To validate that all these processes have started, run the jps command on the namenode. JPS looks for java process and returns the status and process ID of current programs.
 
@@ -282,4 +282,4 @@ While the program runs, we can see that it is mapping and reducing the informati
 ### Job Validation in UI 
 The job success was returned in the console, but can also be viewed in the UI: 
 `<namenode public dns>:8088/proxy/application_<job_id>/`
-![clusters](/images/hadoopec2/jobsucceeded.png)
+![clusters](/images/hadoopec2/jobsucceed.png)
