@@ -54,6 +54,22 @@ To make this change update the config file to include the public DNS for each in
   `HostName <data node 3 public dns`
   `User ubuntu`
 
+ Host namenode
+   HostName ec2-18-188-21-63.us-east-2.compute.amazonaws.com
+   User ubuntu
+   IdentityFile ~/.ssh/allison-key.pem
+ Host datanode1
+   HostName ec2-18-218-8-239.us-east-2.compute.amazonaws.com
+   User ubuntu
+   IdentityFile ~/.ssh/allison-key.pem
+ Host datanode2
+   HostName ec2-18-220-127-51.us-east-2.compute.amazonaws.com
+   User ubuntu
+   IdentityFile ~/.ssh/allison-key.pem
+ Host datanode3
+   HostName ec2-18-220-88-132.us-east-2.compute.amazonaws.com
+   User ubuntu
+
 
 
 
