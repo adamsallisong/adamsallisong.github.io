@@ -3,7 +3,7 @@ title: "Hadoop & MapReduce with AWS EC2"
 excerpt: "Configuration of Hadoop Cluster using EC2<br/><img src='/images/hadoopemr/emr.png'>"
 collection: portfolio
 ---
-## Hadoop Latest Updates
+## Hadoop
 Hadoop is an open source platform that expedites the processing & analysis of large data (both structured and unstructured) in a distributed computing environment. For a more deatiled overview of Hadoop - see my portfolio piece [here.](https://adamsallisong.github.io/portfolio/hadoop-emr/) In this project we will spin up a Hadoop cluster using AWS Elastic Cloud Compute (EC2) which provides scalable cloud computing to developers.
 
 ### Create EC2 Instances
