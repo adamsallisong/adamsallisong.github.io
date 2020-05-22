@@ -3,7 +3,6 @@ title: "Hadoop & MapReduce with AWS Elastic Map Reduce (EMR)"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
-
 ## What is Hadoop?
 Hadoop is an open source platform that expedites the processing & analysis of large data (both
 structured and unstructured) in a distributed computing environment. Hadoop is comprised of
@@ -24,7 +23,7 @@ Apache Hive is a querying language (HQL) that works on top of the Hadoop platfor
 data querying and analysis. Hive is a framework for MapReduce, automating the process. 
 
 ## Building a Hadoop Cluster with AWS & EMR 
-Built using the following [tutorial!](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)
+Built using the following [tutorial](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html)
 
 Amazon Elastic Map Reduce (EMR) on Amazon Web Services (AWS) allows for simplified
 node clustering and services for Hadoop. EMR is a scalable managed framework that automates the process of node provisioning, and both cluster and Hadoop configurations. It is all managed through the AWS dashboards, and requires little technical knowledge to get started. EMR consists of clusters:
@@ -56,10 +55,10 @@ After launching, the cluster can be seen in the EMR dashboard. We can see the 1 
 To see these core instances that have been created, the EC2 Dashboard shows the 3 generated instances. Two of these instances have been created as the slave nodes and one as the master node, as shown with the security group and the functionality that is permitted on each node.
 
 ### Data Setup
-AWS provides access to several sample datasets (s3://us-west-2.elasticmapreduce.samples) and for this example we are using the data provided in Amazon CloudFront Logs (s3://us-west2.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q). The expected output from this example script will be two pieces: Total Requests per Operating System.
+AWS provides access to several [sample datasets](s3://us-west-2.elasticmapreduce.samples) and for this example we are using the data provided in [Amazon CloudFront Logs](s3://us-west2.elasticmapreduce.samples/cloudfront/code/Hive_CloudFront.q). The expected output from this example script will be two pieces: Total Requests per Operating System.
 
 ### Hive Script Configuration
-To add the Hive script accessing the data referenced above a Step needs to be added to the EMR cluster. A step is a “distinct unit of work, comprising one or more Hadoop jobs that run only on the master node of an Amazon EMR cluster” [source!](https://aws.amazon.com/premiumsupport/knowledge-center/bootstrap-step-emr/). The step added will run a prewritten Hive script to query the CloudFront logs. The output for this Hive step is stored in the output folder that was created in the S3 Bucket. This step will automatically run once the node cluster has started. 
+To add the Hive script accessing the data referenced above a Step needs to be added to the EMR cluster. A step is a “distinct unit of work, comprising one or more Hadoop jobs that run only on the master node of an Amazon EMR cluster” [source](https://aws.amazon.com/premiumsupport/knowledge-center/bootstrap-step-emr/). The step added will run a prewritten Hive script to query the CloudFront logs. The output for this Hive step is stored in the output folder that was created in the S3 Bucket. This step will automatically run once the node cluster has started. 
 
 ### Congratulations, you have Hadoop'd!
 To validate that the step ran the “Application history” tab will provide history of the services ran on the node cluster. The hive job shows as “Succeeded”.
