@@ -83,7 +83,7 @@ To add the Hive script accessing the data referenced above a Step needs to be ad
 
 ### Congratulations, you have Hadoop'd!
 To validate that the step ran the “Application history” tab will provide history of the services ran on the node cluster. The hive job shows as “Succeeded”.
-![Suceeded](/images/hadoopemr/Picture16.png)
+![Suceeded](/images/hadoopemr/picture16.png)
 
 Additionally, the “Events” tab acts as a log for each action taken on the Node cluster.
 ![Events Log](/images/hadoopemr/Picture13.png)
