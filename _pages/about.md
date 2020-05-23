@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Allison Adams Rocks The World"
+title: "Allison Adams"
 excerpt: "About me"
 author_profile: true
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi There! It's nice to meet you! My name is Allison and I enjoy tackling tough data problems and designing creative solutions through technology.
+My name is Allison and I enjoy tackling tough data problems and designing creative solutions through technology. I am a Data Scientist at [Syndio](https://synd.io/) eradicating workplace disparities responsible for developing and testing models and code that is accurate, reliable and useful. I am proficient in Python, the Python Scientific Stack (e.g., numpy, pandas, matplotlib, scikit-learn), cloud based AI tools as well as familiarity with Scala and R.
 
 * I am a **Data Nerd** with a passion for math, delivering key insights that drive business decisions
 * I am **Curiosity Driven** and love solving problems and discovering new patterns and challenges.
