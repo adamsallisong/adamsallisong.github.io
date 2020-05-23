@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Allison Adams"
+title: "Allison Adams Rocks The World"
 excerpt: "About me"
 author_profile: true
 redirect_from:
