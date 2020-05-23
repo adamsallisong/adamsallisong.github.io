@@ -1,10 +1,8 @@
 # main links links
 main:
-  - title: "Research Papers"
-    url: /researchpapers/
-   
   - title: "Portfolio"
     url: /portfolio/
-
+  - title: "Research Papers"
+    url: /researchpapers/
   - title: "Resume"
     url: /resume/
