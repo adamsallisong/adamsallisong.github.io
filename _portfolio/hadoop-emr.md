@@ -2,6 +2,14 @@
 title: "Hadoop & MapReduce with AWS Elastic Map Reduce (EMR)"
 excerpt: "Configuration of Hadoop Cluster using EMR"
 collection: portfolio
+
+excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
+header:
+  overlay_image: /assets/images/hb.png
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
 ---
 ## What is Hadoop?
 Hadoop is an open source platform that expedites the processing & analysis of large data (both
