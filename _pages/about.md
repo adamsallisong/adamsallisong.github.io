@@ -1,15 +1,17 @@
 ---
 permalink: /
-title: "Allison Adams, MS-ISM Data Scientist"
+title: "Allison Adams"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Allison's personal website
+Hi There! It's nice to meet you! My name is Allison and I enjoy tackling tough data problems and designing creative solutions through technology.
 
-A data-driven personal website
 ======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+A little bit about me:
+* I am a **Data Nerd** with a passion for math, delivering key insights that drive business decisions
+* I am **Curiosity Driven** and love solving problems and discovering new patterns and challenges.
+* I am a **Life Long Learner** and have my Master of Science in Information Systems with an emphasis in Data Science & Analytics. What does the future hold?
