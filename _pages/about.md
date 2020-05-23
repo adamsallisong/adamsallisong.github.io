@@ -1,14 +1,12 @@
 ---
 permalink: /
-title: "Allison Adams"
-excerpt: "About me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I enjoy tackling tough data problems and designing creative solutions through technology. I am a Data Scientist at [Syndio](https://synd.io/) eradicating workplace disparities responsible for developing and testing models and code that is accurate, reliable and useful. I am proficient in Python, the Python Scientific Stack (e.g., numpy, pandas, matplotlib, scikit-learn), cloud based AI tools as well as familiarity with Scala and R.
+I enjoy tackling tough data problems and designing creative solutions through technology. I am a Data Scientist at [Syndio](https://synd.io/) eradicating workplace disparities responsible for developing and testing models and code that is accurate, reliable and useful. I am proficient in Python, the Python Scientific Stack (e.g., numpy, pandas, matplotlib, scikit-learn), cloud based AI and distributed computing tools as well as familiarity with Scala and R.
 
 :bar_chart: **Data Nerd** with a passion for math, delivering key insights that drive business decisions.
 
