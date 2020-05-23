@@ -11,6 +11,7 @@ redirect_from:
 Hi There! It's nice to meet you! My name is Allison and I enjoy tackling tough data problems and designing creative solutions through technology.
 
 ======
+
 A little bit about me:
 * I am a **Data Nerd** with a passion for math, delivering key insights that drive business decisions
 * I am **Curiosity Driven** and love solving problems and discovering new patterns and challenges.
