@@ -13,6 +13,7 @@ computer nodes (datanodes, slave nodes) to help process large amounts of data. T
 be accessed by several different clients as if they were one local client.
 ![HDFS](/images/hadoopemr/Picture1.png)
 
+{% include gallery caption="This is a sample gallery to go along with this case study." %}
 
 
 * MapReduce: This algorithm allows for queries to be processed in parallel as opposed to the
