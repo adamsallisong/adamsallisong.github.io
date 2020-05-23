@@ -2,6 +2,9 @@
 main:
   - title: "Publications"
     url: /publications/
+    
+  - title: "Research Papers"
+    url: /researchpapers/
 
   - title: "Talks"
     url: /talks/    
