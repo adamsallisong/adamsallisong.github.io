@@ -48,6 +48,10 @@ encodings and compares the list of features to determine if it is a match. This 
 results for the matched pictures. Since this round we are only doing 1 image, we will expect only a single
 true or false to be returned. Since it is not two pictures of myself I would expect to have false returned.
 The Known Image in this case will be myself:
+![ALLISON](/images/facialrecog/Picture1.png)
 
 And the Unknown Image a different female who shares the same age, race and ethicnity as myself.
+![UNKNOWN1](/images/facialrecog/Picture2.png)
+
+
 
