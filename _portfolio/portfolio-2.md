@@ -16,3 +16,12 @@ basics behind how facial recognition & machine learning work.
 *Support Vector Machine (SVM):* The classification aglorithm that the most popular image recognition library dlib uses. SVM is a supervised learning model that can be used for classification and is good for non-linear classification (which is image machine learning)
 
 *Convolutional Neural Networks (CNN):* a classification that takes an input imge and is able to classify it into certain categories. This model will train and test each input (iamge) into different layers with filters - returning a single value between 0 and 1 to predict how an item should be classified.
+
+### How does CNN Work?
+To best understand how a CNN worked, I learned from the article Understanding of Convolutional Neural Network (CNN) - Deep Learning by Prabhu. https://medium.com/@RaghavPrabhu/understanding-ofconvolutional-neural-network-cnn-deep-learning-99760835f148
+
+
+Steps for CNN Modeling This process can be repeated as many times as is necessary (or set) in the model to classify images.
+1. **Input** : Provide Image Input to model
+2. **Convolution**: extract the first layer of the image, but preserve the relationship between the pixels. This will create the first "feature map" for the model
+3. **ReLU**: (Rectified Linear Unit for a non-linear operation) introduces non-linarity to the model. The more non0linear the function is, the more complex of a problem it will be able to complete. This activation function f(x )=max(0, x) helps to increase the speed of training by removing the negative elements and setting them
