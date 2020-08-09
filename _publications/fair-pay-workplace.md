@@ -5,6 +5,7 @@ permalink: /publications/fair-pay-workplace
 excerpt: 'Comparison of the Three Most Prevalent
 Pay Equity Analysis and Remediation Methods.'
 date: 2020-06-02
+venue: 'Fair Pay Workplace'
 paperurl: 'http://academicpages.github.io/files/fair-pay-workplace.pdf'
 citation: 'Zev J. Eigen, Allison Adams & Andrea Palmiter. 2020'
 ---
