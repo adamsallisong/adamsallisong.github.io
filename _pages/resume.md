@@ -9,4 +9,3 @@ redirect_from:
 {% include base_path %}
 
 Download my resume [here](http://adamsallisong.github.io/files/adams_github_resume.pdf)
-Download my resume [here](http://adamsallisong.github.io/files/paper1.pdf)
