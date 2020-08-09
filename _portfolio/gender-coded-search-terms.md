@@ -4,7 +4,7 @@ excerpt: "Using Azure Face API to assess the gender coding of Google Image searc
 collection: portfolio
 ---
 ## Project Background
-One of my passions is being an advocate for women in STEM and I wanted to see how I could combine the two.
+One of my passions is being an advocate for women in STEM and I wanted to see how I could combine this with my work as a data scientist.
 My idea was inspired from [Invisible Women: Exposing Data Bias in a World Designed for Men](https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419729071) by Caroline Criado-Perez and the notion that even “gender neutral” terms are in fact, gendered. One example she gave was the face that when people think of words such as “genius” it is more likely than not a male that is returned. I started to look into the issue, particularly as it deals with Google Image results and what gender is returned for search terms. I didn’t find very inspiring or trustworthy articles – a few old ones from the Sun or Huffington Post that were dated from 2012 or 2015. Surely things have changed since then! To test this hypothesis, I built a program that can digest a search term and return the first 100 Google images. Using Microsoft Azure Face program, it will determine the gender found in the photo and track if the term is male dominated, or female dominated.
 
 This program was built using two key tech
