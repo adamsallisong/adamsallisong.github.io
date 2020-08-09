@@ -1,6 +1,6 @@
 ---
 title: "Azure ML for Gender Coded Words in Google Image Searches"
-excerpt: "Using Azure ML to assess the Gender coding of Google Image Searches"
+excerpt: "Using Azure Face API to assess the gender coding of Google Image searches"
 collection: portfolio
 ---
 ## Project Background
