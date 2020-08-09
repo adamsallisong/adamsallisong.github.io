@@ -8,4 +8,7 @@ redirect_from:
 ---
 {% include base_path %}
 
+![Resume](/images/resume_pic.png)
+
+
 Download my resume [here](http://adamsallisong.github.io/files/adams_github_resume.pdf)
