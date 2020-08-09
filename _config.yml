@@ -85,8 +85,8 @@ author:
   bio              : "Mission driven Data Scientist with a passion for gender equity, math and triathlons."
   location         : "Seattle, WA"
   employer         :
-  pubmed           : 
-  googlescholar    : 
+  pubmed           :
+  googlescholar    :
   email            :  "adams.allisong@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -103,13 +103,13 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "allisonadams2013/"
-  orcid            : 
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -181,6 +181,9 @@ collections:
   researchpapers:
     output: true
     permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -222,6 +225,15 @@ defaults:
   - scope:
       path: ""
       type: researchpapers
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # publications
+  - scope:
+      path: ""
+      type: publications
     values:
       layout: single
       author_profile: true
