@@ -8,7 +8,7 @@ One of my passions is being an advocate for women in STEM and I wanted to see ho
 My idea was inspired from Invisible Women: Exposing Data Bias in a World Designed for Men by Caroline Criado-Perez and the notion that even “gender neutral” terms are in fact, gendered. One example she gave was the face that when people think of words such as “genius” it is more likely than not a male that is returned. I started to look into the issue, particularly as it deals with Google Image results and what gender is returned for search terms. I didn’t find very inspiring or trustworthy articles – a few old ones from the Sun or Huffington Post that were dated from 2012 or 2015. Surely things have changed since then! To test this hypothesis, I built a program that can digest a search term and return the first 100 Google images. Using Microsoft Azure Face program, it will determine the gender found in the photo and track if the term is male dominated, or female dominated.
 
 This program was built using two key tech
-1. [Microsoft Face API](Microsoft Face API (https://azure.microsoft.com/en-us/services/cognitive-services/face/): Detect and compare human faces through Azure
+1. [Microsoft Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/): Detect and compare human faces through Azure
 2. [Google Image Download Python Package](https://github.com/hardikvasa/google- images-download):This is a command line python program to search keyword/key-phrases on Google Images and optionally download images to your computer.
 
 
@@ -18,6 +18,7 @@ To use the Microsoft Azure Face API you need to create a sandbox through an azur
 ![resources](/images/gender/Picture1.png)
 
 Within the portal, you will need to have access to the Keys to run the API
+
 ![keys](/images/gender/Picture2.png)
 
 Now that we have access to the keys and have an appropriated resource, we can test the API connection in the correct region (West US 2 - westus2.api.cognitive.microsoft.com).
