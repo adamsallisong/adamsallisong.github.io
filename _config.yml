@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Allison Adams"
+  name             : "Allison Hamilton (Adams)"
   avatar           : "allison_adams.jpg"
   bio              : "Mission driven Data Scientist with a passion for gender equity, math and triathlons."
   location         : "Seattle, WA"
   employer         :
   pubmed           :
   googlescholar    :
-  email            :  "adams.allisong@gmail.com"
+  email            :  "hamilton.allisong@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
