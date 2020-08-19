@@ -13,7 +13,7 @@ I enjoy tackling tough data problems and designing creative solutions through te
 
 :bar_chart: **Data Nerd** with a passion for math, delivering key insights that drive business decisions.
 
-:collision: **Curiosity Driven** with a love solving problems and discovering new patterns and challenges.
+:collision: **Curiosity Driven** with a love for solving problems and discovering new patterns and challenges.
 
 :mortar_board: **Life Long Learner** holding my Master of Science in Information Systems with an emphasis in Data Science & Analytics. What does the future hold?
 
