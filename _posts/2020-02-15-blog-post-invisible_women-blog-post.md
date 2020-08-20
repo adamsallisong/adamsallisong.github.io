@@ -1,10 +1,6 @@
 ---
-title: 'Blog Post number 4'
-permalink: /posts/2012/08/blog-post-4/
-tags:
-  - cool posts
-  - category1
-  - category2
+title: 'Invisible Women: Data Bias in a World Desgined for Men'
+permalink: /posts/invisible_women/
 ---
 :star: :star: :star: :star: :star:
 **Invisible Women: Data Bias in a World Designed for Men**
