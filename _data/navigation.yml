@@ -6,5 +6,5 @@ main:
     url: /researchpapers/
   - title: "Published Articles"
     url: /publications/
-  - title: "Book Review Corner"
-    url: /year-archive/
+  # - title: "Book Review Corner"
+  #   url: /year-archive/
