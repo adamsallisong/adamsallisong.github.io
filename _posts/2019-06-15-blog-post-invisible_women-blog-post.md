@@ -1,5 +1,5 @@
 ---
-title: 'Invisible Women: Data Bias in a World Desgined for Men'
+title: 'Invisible Women'
 permalink: /posts/invisible_women/
 ---
 :star: :star: :star: :star: :star:
