@@ -7,6 +7,7 @@ excerpt: :star: :star: :star: :star: Everybody Lies by Seth Stephens-Davidowitz 
 Everybody Lies
 ======
 By: Seth Stephens-Davidowitz
+
 Allison's Rating: :star: :star: :star: :star:
 
 Everybody Lies by Seth Stephens-Davidowitz uses humor and personal exposition to analyze current social issues with data science methodologies. The purpose of this book is not to build a foundation in the mathematics or statistics behind the data, but instead unpacks how to identify where big data can help improve decision making for all issues, big and small. Stephens-Davidowitz deep dives into Facebook data, google searches for porn, and baseball statistics. While these particular outcomes of data science may not be meaningful or produce a profit for businesses, understanding the fundamental powers of big data is paramount. Throughout the chapters Stephens-Davidowitz’s data driven passion for solving puzzles rings true, providing the reader with an outline what he constructs as the four powers of Big Data.

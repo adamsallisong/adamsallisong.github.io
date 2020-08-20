@@ -10,7 +10,8 @@ Invisible Women: Data Bias in a World Designed for Men
 ======
 
 By: Caroline Criado Perez
-Allison's Rating:Allison's Rating: :star: :star: :star: :star: :star:
+
+Allison's Rating: :star: :star: :star: :star: :star:
 
 
 Author Caroline Criado Perez takes the reader through a 6-part journey highlighting how a world that has become increasingly more data driven, has also become systematically blind to bias against women. This data gap is a, “consequence of the type of unthinking that conceives of humanity as almost exclusively male” (Perez) which leaves women at an unfair advantage when healthcare providers, employers and governments make decisions that are rooted in foundation of big data. Women have more complex, hormonal and statistically more sophisticated bodies. However, to properly research and conduct studies against women often takes more time, and consequentially more money.
