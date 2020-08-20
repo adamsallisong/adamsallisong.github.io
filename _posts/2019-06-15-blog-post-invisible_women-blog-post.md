@@ -1,5 +1,5 @@
 ---
-title: 'Invisible Women2'
+title: 'Invisible Women'
 permalink: /posts/invisible_women/
 excerpt: ':star: :star: :star: :star: :star:
 Author Caroline Criado Perez takes the reader through a 6-part journey highlighting how a world that has become increasingly more data driven, has also become systematically blind to bias against women.'
