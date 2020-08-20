@@ -7,4 +7,6 @@ main:
   - title: "Published Articles"
     url: /publications/
   - title: "Book Reviews"
-    url: /year-archive/
+    url: /book-review/
+  - title: "Data Musings"
+    url: /data-musings
