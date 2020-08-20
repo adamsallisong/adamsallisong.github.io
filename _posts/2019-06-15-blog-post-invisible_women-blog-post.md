@@ -1,6 +1,8 @@
 ---
 title: 'Invisible Women'
 permalink: /posts/invisible_women/
+excerpt: 'Literature review of Big Data and Small to Medium Size Enterprise Readiness.'
+
 ---
 :star: :star: :star: :star: :star:
 **Invisible Women: Data Bias in a World Designed for Men**
@@ -20,7 +22,9 @@ For example, when individuals see author names, they are more likely to assume t
 The second issue, lack of sex-disaggregated data stems from the common practice in statistical data analysis to leave sex out of the study at all. In a world where the default is “male” this has the high potential to make data decisions that do not benefit almost 50% of the population. One relatable example of this was the designing the size of iPhone. Reading the book on my phone it made me chuckle that the size of the newest phones “statistically significant gender difference in the impact of phone size on women’s hand and arm health.” (Perez). However, that smile quickly faded when the same lack of sex- disaggregated data meant that car airbags and headrests were not properly tested on women. While the fact that Alexa will never recognize my voice or snow plowing of sidewalks might be a ‘funny’ examples of this issue, the fact that women are 47% more likely to be injured in a car accident and 17% more likely to die is a serious issue that must be addressed by those using data to make decisions.
 
 **What I liked the most**
+
 I loved this book, and never wanted it to end. I found myself reading this book in coffee shops and saying out loud “YES” or sighing loudly because of how I can relate the bias & t to my everyday life. The section that stood out to me the most was Part II: The Workplace particularly the chapter “The Myth of Meritocracy”. This chapter was riddled with examples and unfortunate truths I have also faced in the workplace. I have been told that I am “bossy, abrasive, strident, aggressive, emotional and irrational” (Perez, 93) but unfortunately at the time didn’t realize that it was because of universal gender roles & a result of male-default thinking in data bias that led to them being said.   On a positive note, what I also liked about this chapter is I felt it gave tangible examples of how actionable steps can be taken. Particularly how algorithms that are designed and engineered to remove human bias are actually created with a bias against women (and several other minority groups). As a graduate student pursuing data analytics this provides me with a concrete example of potential bias and to consider how to challenge underlying assumptions about gender might play a role future projects.
 
 **What Next?**
+
 While I overall loved this book, I do find it difficult and overwhelming in what actionable steps can be taken. Particularly when society has a deep rooted bias that women are “too complicated to measure” (Perez, 30). If women start an upheaval to demand more square footage in the bathrooms (based on valid data), this might further the ingrained notion that just the weaker sex and should not be catered towards when addressing the ‘typical’ end user. How can steps be taken to remove this sexist bias from data analysis without having negative side effects? While Perez urges for data to be sex dis-aggregated my question is what next? Is this something that should be dealt with at the legal level (but most likely slow) or a grassroots movement (that might not impact all companies?). Overall, this book has left lasting questions for me, but most of all has encouraged me to share what I have learned with practically everybody I meet. I recommend this book to everyone, regardless of gender to help challenge bias.
