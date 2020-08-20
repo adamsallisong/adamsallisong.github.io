@@ -7,7 +7,7 @@ Author Caroline Criado Perez takes the reader through a 6-part journey highlight
 ---
 
 Invisible Women: Data Bias in a World Designed for Men
-======
+------
 
 By: Caroline Criado Perez
 
