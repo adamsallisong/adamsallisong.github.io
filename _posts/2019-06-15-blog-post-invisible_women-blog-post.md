@@ -1,7 +1,8 @@
 ---
 title: 'Invisible Women'
 permalink: /posts/invisible_women/
-excerpt: 'Literature review of Big Data and Small to Medium Size Enterprise Readiness.'
+excerpt: ':star: :star: :star: :star: :star:
+Author Caroline Criado Perez takes the reader through a 6-part journey highlighting how a world that has become increasingly more data driven, has also become systematically blind to bias against women.'
 
 ---
 :star: :star: :star: :star: :star:
