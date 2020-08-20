@@ -1,7 +1,7 @@
 ---
 title: 'Everybody Lies'
 permalink: /posts/everybody-lies/
-excerpt: :star: :star: :star: :star: Everybody Lies by Seth Stephens-Davidowitz uses humor and personal exposition to analyze current social issues with data science methodologies
+excerpt: ':star: :star: :star: :star: Everybody Lies by Seth Stephens-Davidowitz uses humor and personal exposition to analyze current social issues with data science methodologies'
 ---
 
 Everybody Lies
