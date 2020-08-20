@@ -5,7 +5,7 @@ excerpt: :star: :star: :star: :star: Everybody Lies by Seth Stephens-Davidowitz 
 ---
 
 Everybody Lies
-======
+------
 By: Seth Stephens-Davidowitz
 
 Allison's Rating: :star: :star: :star: :star:
