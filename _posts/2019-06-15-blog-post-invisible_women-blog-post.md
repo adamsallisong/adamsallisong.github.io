@@ -6,7 +6,9 @@ excerpt: 'Literature review of Big Data and Small to Medium Size Enterprise Read
 ---
 :star: :star: :star: :star: :star:
 **Invisible Women: Data Bias in a World Designed for Men**
+
 By: Caroline Criado Perez
+
 Author Caroline Criado Perez takes the reader through a 6-part journey highlighting how a world that has become increasingly more data driven, has also become systematically blind to bias against women.
 
 
