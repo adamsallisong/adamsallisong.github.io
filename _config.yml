@@ -259,6 +259,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  - scope:
+      path: ""
+      type: musings
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:
