@@ -1,12 +1,11 @@
 ---
 title: 'How do modern day visualization tools compare to Microsoft Excel?'
 permalink: /data-musings/excel/
-excerpt: 'Data tools that provide visualization enable businesses to generate visuals that go beyond the standard data presentation and offer a “spark” of excitement when highlighting data trends and results'
+excerpt: 'Data tools that provide visualization enable businesses to generate visuals that go beyond the standard data presentation and offer a “spark” of excitement when highlighting data trends and results...'
 tags:
   - excel
   - data viz
 ---
-
 
 
 Data tools that provide visualization enable businesses to generate visuals that go beyond the standard data presentation and offer a “spark” of excitement when highlighting data trends and results. These trends help to identify trends that can be traced to either causation of problems, or deliver a solution to issues a company is currently facing. These visualizations help to turn data from simply a spreadsheet of numbers into insights that can be held, 	and applied to real world business problems offering a competitive advantage.
