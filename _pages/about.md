@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I enjoy tackling tough data problems and designing creative solutions through technology. I am a Data Scientist at [Syndio](https://synd.io/) eradicating workplace disparities responsible for developing and testing models and code that is accurate, reliable and useful. I am proficient in Python, the Python Scientific Stack (e.g., numpy, pandas, matplotlib, scikit-learn), cloud based AI and distributed computing tools as well as familiarity with Scala and R.
+I enjoy tackling tough data problems and designing creative solutions through technology. I am a Data Scientist at [Syndio](https://synd.io/) eradicating workplace disparities responsible for developing and testing models and code that is accurate, reliable and useful. I am proficient in Python, the Python Scientific Stack (e.g., numpy, pandas, matplotlib, scikit-learn), cloud based AI and distributed computing tools as well as familiarity with Stata and R.
 
 <a href="http://adamsallisong.github.io/files/adams_github_resume.pdf" target="_blank">Download Resume</a> to learn more.
 
