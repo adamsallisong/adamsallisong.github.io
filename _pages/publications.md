@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Published Articles"
+title: "Published Articles & Public Work"
 permalink: /publications/
 author_profile: true
 ---
