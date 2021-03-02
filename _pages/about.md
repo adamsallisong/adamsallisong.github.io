@@ -10,7 +10,6 @@ I enjoy tackling tough data problems and designing creative solutions through te
 
 <a href="http://adamsallisong.github.io/files/adams_github_resume.pdf" target="_blank">Download Resume</a> to learn more.
 
-
 :bar_chart: **Data Nerd** with a passion for math, delivering key insights that drive business decisions.
 
 :collision: **Curiosity Driven** with a love for solving problems and discovering new patterns and challenges.
