@@ -17,4 +17,4 @@ I enjoy tackling tough data problems and designing creative solutions through te
 
 :mortar_board: **Life Long Learner** holding my Master of Science in Information Systems with an emphasis in Data Science & Analytics. What does the future hold?
 
-:swimming_woman: :bike: :running_woman: **Competitive Triathlete**, Member of [Team Zoot 2020 Racing Team](https://zootsports.com/pages/teamzoot).  
+:swimming_woman: :bike: :running_woman: **Competitive Triathlete**, Member of [Team Zoot 2021 Racing Team](https://zootsports.com/pages/teamzoot).  
